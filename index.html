@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="">
+    <form method="get">
       First Name: <input type="text" placeholder="John" name="firstname" />
       <br />
       Last Name: <input type="text" placeholder="Doe" name="lastname" /> <br />
@@ -21,10 +21,10 @@
       /><br />
 
       Gender: <br />
-      <!-- name here makes them tagged to each other like family -->
-      <input type="radio" name="gender" /> Male
-      <input type="radio" name="gender" /> Female
-      <input type="radio" name="gender" /> Others
+      <!-- name here makes them tagged to each other like family & make sure to add value to them as if not it will take the default 'on' as the value-->
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female
+      <input type="radio" name="gender" value="Others" /> Others
       <br />
       Pets: <br />
       <input type="checkbox" name="dog" /> Dog
@@ -33,7 +33,7 @@
       <br />
       <input type="submit" value="register" /> <input type="reset" />
       <br />
-      <select name="" id="">
+      <select name="car" id="">
         droopdown
         <option value="Triumph" name="Triumph">Triumph</option>
         <option value="Volvo" name="Volvo">Volvo</option>
@@ -42,3 +42,7 @@
     </form>
   </body>
 </html>
+
+<!-- 
+  firstname=Rituraj&lastname=Mahapatra&email=riturajmahapatra%40gmail.com&password=qwqsdasdas&gender=on&dog=on
+ -->
